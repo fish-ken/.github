@@ -19,6 +19,7 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           base: header, repositories
           plugin_lines: yes
+          user: fish-ken
 
   # 가장 많이 사용한 언어 통계 생성
   most_used_languages:
@@ -34,6 +35,7 @@ jobs:
             html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell,
             gnuplot
           plugin_languages_limit: 8
+          user: fish-ken
 
   # 최근 사용한 언어 통계 생성 (다른 파일에 저장)
   recently_used_languages:
@@ -49,5 +51,6 @@ jobs:
             html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell,
             gnuplot
           plugin_languages_sections: recently-used
+          user: fish-ken
           plugin_languages_details: bytes-size, percentage
           plugin_languages_limit: 8
